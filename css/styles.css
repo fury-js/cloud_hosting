@@ -14,6 +14,7 @@ html {
     --color-accent: #ff3400;
     --color-headings: #1b0760;
     --color-body: #918ca4;
+    --color-body-dark: #5c5577;
     --color-border: #ccc;
     --border-radius: 30px
 }
@@ -426,6 +427,58 @@ a {
 
 .media__image {
     margin-top: 1rem;
+}
+
+
+/* Quotes */
+
+.quote {
+    font-size: 3rem;
+    
+    color: var(--color-body-dark);
+    line-height: 1.3;
+}
+
+.quote__text {
+    font-style: italic;
+}
+
+.quote__text::before {
+    content: '“';
+}
+
+.quote__text::after {
+    content: '”';
+}
+
+.quote__author {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.quote__company {
+    font-size: 2rem;
+    font-weight: 300;
+    opacity: 0.4;
+    color: var(--color-headings);
+}
+
+.quote__line {
+    margin-top: 0.5rem;
+}
+
+@media screen and (min-width: 768px) {
+    .quote {
+        font-size: 2.5rem;
+    }
+   
+    .quote__author {
+        font-size: 3rem;
+    }
+    .quote__company {
+        font-size: 2rem;
+    }
 }
     
 

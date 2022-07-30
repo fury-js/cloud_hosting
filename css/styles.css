@@ -306,6 +306,29 @@ a {
         font-size: 1.5rem;
     }
 }
+
+
+/* Cards */
+
+.card {
+    border-radius: 7px;
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.card__header, .card__body {
+    padding: 1rem 1rem;
+}
+
+.card--primary .card__header {
+    background-color: var(--color-primary);
+    color:#fff;
+}
+
+.card--secondary .card__header {
+    background-color: var(--color-secondary);
+    color: #fff;
+}
     
 
 

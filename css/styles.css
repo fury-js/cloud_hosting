@@ -636,6 +636,38 @@ a {
     max-height: 100vh;
     opacity: 1;
 }
+
+/* Blocks */
+
+.block {
+    --padding-vertical: 5rem;
+    padding: var(--padding-vertical) 3rem;
+    /* border: 1px solid tomato; */
+}
+
+.block--dark {
+    background: black;
+    color: #fff;
+}
+
+.block--dark .block__heading {
+    color: #fff;
+}
+
+
+.block--skewed-right {
+    padding-bottom: calc(var(--padding-vertical) + 5rem);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+}
+
+.block__header {
+    text-align: center;
+}
+
+.block--container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
     
     
 

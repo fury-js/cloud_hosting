@@ -882,6 +882,33 @@ a {
 
 
 }
+
+
+/* Features Block */
+
+.feature-block .grid {
+    padding-bottom: 10rem;
+}
+
+.feature{
+    gap: 8rem 2rem
+}
+
+
+.feature-block__image {
+    width: 100%;
+}
+
+.feature-block__container {
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+    .feature:nth-of-type(even) .feature__content {
+        order: 2;
+    }
+    
+}
     
 
 

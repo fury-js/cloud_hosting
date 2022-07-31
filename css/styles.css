@@ -229,6 +229,11 @@ a {
     border: 2px solid var(--color-primary);
 }
 
+.btn--streched {
+    padding-left: 10rem;
+    padding-right: 15rem;
+}
+
 .btn--outline:hover {
     background-color: var(--color-headings);
     color: #fff;
@@ -545,6 +550,54 @@ a {
     .testimonial .quote {
         margin-left: 8rem;
     }
+}
+
+/* Callout */
+
+
+.callout {
+    padding: 3rem;
+    border-radius: 5px;
+}
+
+.callout--primary {
+    background-color: var(--color-primary);
+    color: #fff;
+}
+
+.callout__title {
+    color: #fff;
+    margin-top: 0;
+}
+
+.callout .btn {
+    justify-self: center;
+    align-self: center;
+
+}
+
+.callout__content {
+    text-align: center;
+}
+
+
+@media screen and (min-width:768px) {
+
+    .callout .grid--1x2 {
+        grid-template-columns: 1fr, auto;
+
+    }
+
+
+    .callout__content {
+        text-align: left;
+    }
+
+    .callout .btn {
+        justify-self:start;
+        margin: 0 2rem;
+    }
+    
 }
     
     

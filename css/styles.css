@@ -28,6 +28,7 @@ body {
     font-family: Inter, Arial, Helvetica, sans-serif;
     font-size: 2.4rem;
     line-height: 1.5;
+    margin: 0;
     color: var(--color-body);
 }
 
@@ -146,7 +147,7 @@ a {
 .list {
     list-style: none;
     padding-left: 2rem;
-    color: var(--color-headings);
+    
 
 }
 
@@ -334,6 +335,7 @@ a {
     border: 0;
     flex-grow: 1;
     padding: 1.5rem 6rem;
+    width: 0;
 }
 
 .input-group .btn {
@@ -593,6 +595,7 @@ a {
 .callout {
     padding: 3rem;
     border-radius: 5px;
+    
 }
 
 .callout--primary {
@@ -687,6 +690,10 @@ a {
 
 .block--dark .block--heading {
     color: #fff;
+}
+
+.block--heading {
+    color: var(--color-headings);
 }
 
 .block--dark h1, h2, h3 {
@@ -854,7 +861,8 @@ a {
 
 .block-domain__prices {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    color: var(--color-headings);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: (2, 6rem);
     font-size: 2rem;
     font-weight: 600;

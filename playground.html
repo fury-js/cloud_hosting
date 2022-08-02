@@ -1,0 +1,81 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="css/normalize.css" />
+		<link rel="stylesheet" href="css/styles.css" />
+		<title>Document</title>
+	</head>
+
+	<body>
+		<header>
+			<nav class="nav collapsible">
+				<a href="/"><img src="images/logo.svg" /></a>
+				<svg class="icon icon--white nav__toggler">
+					<use xlink:href="images/sprite.svg#menu"></use>
+				</svg>
+				<ul class="list nav__list collapsible__content">
+					<li class="nav__item"><a href="#">HOSTING</a></li>
+					<li class="nav__item"><a href="#">VPS</a></li>
+					<li class="nav__item"><a href="#">DOMAIN</a></li>
+					<li class="nav__item"><a href="#">PRICING</a></li>
+				</ul>
+			</nav>
+		</header>
+		<section class="block block--dark block--skewed-left hero">
+			<div class="block--container grid grid--1x2">
+				<header class="block__header hero__content">
+					<h1 class="block__heading">Cloud Hosting for Pros</h1>
+					<p class="hero__tagline">
+						Deploy you website in less than 60 seconds
+					</p>
+					<a href="#" class="btn btn--accent btn--streched">Get Started</a>
+				</header>
+				<img class="hero__image" src="images/banner.png" />
+			</div>
+		</section>
+		<section class="block block--container block-domain">
+			<header class="block__header">
+				<h2 class="block--heading">The best webhost starting at per month</h2>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur,
+					nemo?
+				</p>
+			</header>
+			<div class="input-group">
+				<input
+					class="input"
+					type="text"
+					placeholder="Enter domain name here..."
+				/>
+
+				<button class="btn btn--accent">
+					<svg class="icon icon--white">
+						<use xlink:href="images/sprite.svg#search"></use>
+					</svg>
+					Search
+				</button>
+			</div>
+			<ul class="list block-domain__prices">
+				<li>.com $9</li>
+				<li>.net $25</li>
+				<li>.xyz $5</li>
+				<li>.co $30</li>
+				<li><span class="badge badge--secondary">.us $90</span></li>
+				<li>.gb-en $90</li>
+			</ul>
+		</section>
+
+		<script src="js/main.js"></script>
+	</body>
+</html>
